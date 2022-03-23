@@ -1,0 +1,8 @@
+Решение ошибки добавления репозитория: Следующие подписи не могут быть проверены, так как недоступен открытый ключ: NO_PUBKEY EB3E94ADBE1229CF
+
+Если вы столкнулись с данной ошибкой, то для её решения выполните следующие команды. Для операционных систем Ubuntu и подобных:
+
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
+
+sudo apt update
+
